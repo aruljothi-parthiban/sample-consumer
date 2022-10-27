@@ -1,6 +1,6 @@
 {
   "name": "consumer",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
     "axios": "^0.21.1",
@@ -9,9 +9,9 @@
   "scripts": {
     "pretest": "rimraf pacts",
     "test": "jest",
-    "publish": "pact-broker publish ./pacts --broker-base-url https://cantirecorp.pactflow.io --broker-token 2JBH9Z8tsLyEVqwZSMyi2g --consumer-app-version=\"$(npx @pact-foundation/absolute-version)\" --auto-detect-version-properties",
-    "can-i-deploy": "pact-broker can-i-deploy --broker-base-url https://cantirecorp.pactflow.io --broker-token 2JBH9Z8tsLyEVqwZSMyi2g --pacticipant sample-consumer --version=\"$(npx @pact-foundation/absolute-version)\" --to-environment production",
-    "deploy": "pact-broker record-deployment --pacticipant sample-consumer --version \"$(npx @pact-foundation/absolute-version)\" --environment production"
+    "publish": "pact-broker publish ./pacts --broker-base-url https://cantirecorp.pactflow.io --broker-token 2JBH9Z8tsLyEVqwZSMyi2g --consumer-app-version=1.0.1 --auto-detect-version-properties",
+    "can-i-deploy": "pact-broker can-i-deploy --broker-base-url https://cantirecorp.pactflow.io --broker-token 2JBH9Z8tsLyEVqwZSMyi2g --pacticipant sample-consumer --version=1.0.1 --to-environment production",
+    "deploy": "pact-broker record-deployment --pacticipant sample-consumer --version 1.0.1 --environment production"
   },
   "devDependencies": {
     "@anev/ts-mountebank": "^1.4.1",

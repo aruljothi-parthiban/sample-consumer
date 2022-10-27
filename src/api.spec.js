@@ -28,7 +28,8 @@ describe("API Contract Test", () => {
     id: "10",
     type: "CREDIT_CARD",
     name: "28 Degrees",
-    description: "Test"
+    description: "Test",
+    sku: "Sample SKU"
   };
 
   describe("retrieving products", () => {
