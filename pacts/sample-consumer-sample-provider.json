@@ -1,0 +1,223 @@
+{
+    "consumer": {
+        "name": "sample-consumer"
+    },
+    "provider": {
+        "name": "sample-provider"
+    },
+    "interactions": [
+        {
+            "description": "GET_/products_200 - List all products",
+            "request": {
+                "method": "GET",
+                "path": "/products",
+                "query": "",
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": [
+                    {
+                        "id": "1234",
+                        "type": "food",
+                        "price": 42,
+                        "description": "Indian cuisine",
+                        "sku": "Test"
+                    }
+                ]
+            },
+            "timestamp": "2022-11-07T20:21:38.491Z"
+        },
+        {
+            "description": "GET_/products_400 - List all products",
+            "request": {
+                "method": "GET",
+                "path": "/products",
+                "query": "",
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "response": {
+                "status": 400,
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "timestamp": "2022-11-07T20:21:39.511Z"
+        },
+        {
+            "description": "POST_/products_200 - Create a product",
+            "request": {
+                "method": "POST",
+                "path": "/products",
+                "query": "",
+                "body": {
+                    "id": "1234",
+                    "name": "idli",
+                    "type": "food",
+                    "price": 42,
+                    "description": "Indian cuisine",
+                    "sku": "Test"
+                },
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "id": "1234",
+                    "type": "food",
+                    "price": 42,
+                    "description": "Indian cuisine",
+                    "sku": "Test"
+                }
+            },
+            "timestamp": "2022-11-07T20:21:39.711Z"
+        },
+        {
+            "description": "GET_/product/10_200 - Find product by ID",
+            "request": {
+                "method": "GET",
+                "path": "/product/10",
+                "query": "",
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "id": "1234",
+                    "type": "food",
+                    "price": 42,
+                    "description": "Indian cuisine",
+                    "sku": "Test"
+                }
+            },
+            "timestamp": "2022-11-07T20:21:39.927Z"
+        },
+        {
+            "description": "GET_/product/10_400 - Find product by ID",
+            "request": {
+                "method": "GET",
+                "path": "/product/10",
+                "query": "",
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "response": {
+                "status": 400,
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "timestamp": "2022-11-07T20:21:40.960Z"
+        },
+        {
+            "description": "GET_/product/10_404 - Find product by ID",
+            "request": {
+                "method": "GET",
+                "path": "/product/10",
+                "query": "",
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "response": {
+                "status": 404,
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "timestamp": "2022-11-07T20:21:41.987Z"
+        },
+        {
+            "description": "GET_/suggest_200 - Suggest",
+            "request": {
+                "method": "GET",
+                "path": "/suggest",
+                "query": "request_type=suggest&account_id=6466&catalog_views=catalog_views&q=specialty+hand+tools&ref_url=https%3A%2F%2Fsit3-www.canadiantire.ca%2F&request_id=e42c75bad3fe4b14bf1ba74fd3403ac2&_br_uid_2=uid%3D5678975391619%3Av%3D12.0%3Ats%3D1654004108717%3Ahc%3D39%26",
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "queryContext": "specialty hand tools"
+                }
+            },
+            "timestamp": "2022-11-07T20:21:42.253Z"
+        },
+        {
+            "description": "GET_/suggest_400 - Suggest",
+            "request": {
+                "method": "GET",
+                "path": "/suggest",
+                "query": "request_type=suggest&account_id=6466&catalog_views=catalog_views&q=specialty+hand+tools&ref_url=https%3A%2F%2Fsit3-www.canadiantire.ca%2F&request_id=e42c75bad3fe4b14bf1ba74fd3403ac2&_br_uid_2=uid%3D5678975391619%3Av%3D12.0%3Ats%3D1654004108717%3Ahc%3D39%26",
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "response": {
+                "status": 400,
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "timestamp": "2022-11-07T20:21:43.280Z"
+        },
+        {
+            "description": "GET_/suggest_404 - Suggest",
+            "request": {
+                "method": "GET",
+                "path": "/suggest",
+                "query": "request_type=suggest&account_id=6466&catalog_views=catalog_views&q=specialty+hand+tools&ref_url=https%3A%2F%2Fsit3-www.canadiantire.ca%2F&request_id=e42c75bad3fe4b14bf1ba74fd3403ac2&_br_uid_2=uid%3D5678975391619%3Av%3D12.0%3Ats%3D1654004108717%3Ahc%3D39%26",
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "response": {
+                "status": 404,
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "timestamp": "2022-11-07T20:21:44.307Z"
+        }
+    ],
+    "metadata": {
+        "pactSpecification": {
+            "version": "2.0.0"
+        },
+        "client": {
+            "name": "pact-mountebank-adapter",
+            "version": "1.0.2"
+        }
+    }
+}
