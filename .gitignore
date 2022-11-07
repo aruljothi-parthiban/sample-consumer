@@ -27,6 +27,4 @@ yarn-error.log*
 
 pacts/
 logs/
-
-# mountebank
-mb*
+.vscode
