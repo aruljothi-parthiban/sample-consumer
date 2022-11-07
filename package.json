@@ -1,15 +1,15 @@
 {
   "name": "consumer",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "private": true,
   "dependencies": {
     "axios": "^0.21.1",
     "jest": "^27.5.1"
   },
   "scripts": {
-    "publish": "pact-broker publish ./pacts --broker-base-url https://cantirecorp.pactflow.io --broker-token 2JBH9Z8tsLyEVqwZSMyi2g --consumer-app-version=1.0.0 --auto-detect-version-properties",
-    "can-i-deploy": "pact-broker can-i-deploy --broker-base-url https://cantirecorp.pactflow.io --broker-token 2JBH9Z8tsLyEVqwZSMyi2g --pacticipant sample-consumer --version=1.0.0 --to-environment production",
-    "deploy": "pact-broker record-deployment --pacticipant sample-consumer --version 1.0.0 --environment production",
+    "publish": "pact-broker publish ./pacts --broker-base-url https://cantirecorp.pactflow.io --broker-token 2JBH9Z8tsLyEVqwZSMyi2g --consumer-app-version=1.0.2 --auto-detect-version-properties",
+    "can-i-deploy": "pact-broker can-i-deploy --broker-base-url https://cantirecorp.pactflow.io --broker-token 2JBH9Z8tsLyEVqwZSMyi2g --pacticipant sample-consumer --version=1.0.2 --to-environment production",
+    "deploy": "pact-broker record-deployment --pacticipant sample-consumer --version 1.0.2 --environment production",
     "generate-pacts": "node ./node_modules/cds.lib.generate-pacts-from-swagger/index.js"
   },
   "devDependencies": {

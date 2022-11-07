@@ -5,10 +5,11 @@ module.exports = {
       name: "sample-provider",
       version: "1.0.1",
       // swaggerFilePath: "../provider/oas/products.yml",
-      paths: {
-        "/products": "./responses/get_responses.json",
-        // "/{baseSiteId}/products/{productCode}"
-      },
+      paths: []
+      // paths: {
+      //   "/products": "./responses/get_responses.json",
+      //   // "/{baseSiteId}/products/{productCode}"
+      // },
     },
   ],
   swaggerHub: {
