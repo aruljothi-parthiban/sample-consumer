@@ -1,0 +1,255 @@
+{
+    "consumer": {
+        "name": "sample-consumer"
+    },
+    "provider": {
+        "name": "commerce-webservices"
+    },
+    "interactions": [
+        {
+            "description": "GET_/BASESITEID/catalogs_200 - Get a list of catalogs",
+            "request": {
+                "method": "GET",
+                "path": "/BASESITEID/catalogs",
+                "query": "fields=FIELDS",
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "catalogs": [
+                        {
+                            "catalogVersions": [
+                                {
+                                    "categories": [
+                                        {
+                                            "breadcrumbData": [
+                                                {
+                                                    "name": "string",
+                                                    "url": "string"
+                                                }
+                                            ],
+                                            "canonicalURL": "string",
+                                            "categoryWheelType": "string",
+                                            "currentCategoryImage": {
+                                                "altText": "string",
+                                                "angleOrCrop": "string",
+                                                "assetID": "string",
+                                                "assetName": "string",
+                                                "assetType": "string",
+                                                "code": "string",
+                                                "damCreateDate": "string",
+                                                "format": "string",
+                                                "galleryIndex": 0,
+                                                "imageSpinIndicator": true,
+                                                "imageType": "string",
+                                                "isListingThumbnailImage": true,
+                                                "isPrimary": true,
+                                                "language": "string",
+                                                "mediaType": "string",
+                                                "order": "string",
+                                                "packageView": "string",
+                                                "productImageType": "string",
+                                                "url": "string",
+                                                "videoImageThumbnailDAMPath": "string",
+                                                "videoImageThumbnailURL": "string",
+                                                "videoPlatform": "string",
+                                                "videoShortDescription": "string",
+                                                "videoTitle": "string",
+                                                "videoType": "string"
+                                            },
+                                            "description": "string",
+                                            "displayInNavigation": true,
+                                            "fitmentRequired": true,
+                                            "hreflangLinkData": [
+                                                {
+                                                    "href": "string",
+                                                    "hreflang": "string"
+                                                }
+                                            ],
+                                            "id": "string",
+                                            "image": {
+                                                "altText": "string",
+                                                "angleOrCrop": "string",
+                                                "assetID": "string",
+                                                "assetName": "string",
+                                                "assetType": "string",
+                                                "code": "string",
+                                                "damCreateDate": "string",
+                                                "format": "string",
+                                                "galleryIndex": 0,
+                                                "imageSpinIndicator": true,
+                                                "imageType": "string",
+                                                "isListingThumbnailImage": true,
+                                                "isPrimary": true,
+                                                "language": "string",
+                                                "mediaType": "string",
+                                                "order": "string",
+                                                "packageView": "string",
+                                                "productImageType": "string",
+                                                "url": "string",
+                                                "videoImageThumbnailDAMPath": "string",
+                                                "videoImageThumbnailURL": "string",
+                                                "videoPlatform": "string",
+                                                "videoShortDescription": "string",
+                                                "videoTitle": "string",
+                                                "videoType": "string"
+                                            },
+                                            "isRelatedCategory": true,
+                                            "lastModified": "string",
+                                            "metaRobot": "string",
+                                            "name": "string",
+                                            "noCrawl": true,
+                                            "order": 0,
+                                            "productListFormat": "string",
+                                            "seoCopyBlock": "string",
+                                            "seoDescription": "string",
+                                            "seoTitle": "string",
+                                            "subcategories": [
+                                                null
+                                            ],
+                                            "url": "string"
+                                        }
+                                    ],
+                                    "id": "string",
+                                    "image": {
+                                        "altText": "string",
+                                        "angleOrCrop": "string",
+                                        "assetID": "string",
+                                        "assetName": "string",
+                                        "assetType": "string",
+                                        "code": "string",
+                                        "damCreateDate": "string",
+                                        "format": "string",
+                                        "galleryIndex": 0,
+                                        "imageSpinIndicator": true,
+                                        "imageType": "string",
+                                        "isListingThumbnailImage": true,
+                                        "isPrimary": true,
+                                        "language": "string",
+                                        "mediaType": "string",
+                                        "order": "string",
+                                        "packageView": "string",
+                                        "productImageType": "string",
+                                        "url": "string",
+                                        "videoImageThumbnailDAMPath": "string",
+                                        "videoImageThumbnailURL": "string",
+                                        "videoPlatform": "string",
+                                        "videoShortDescription": "string",
+                                        "videoTitle": "string",
+                                        "videoType": "string"
+                                    },
+                                    "lastModified": "string",
+                                    "name": "string",
+                                    "url": "string"
+                                }
+                            ],
+                            "id": "string",
+                            "image": {
+                                "altText": "string",
+                                "angleOrCrop": "string",
+                                "assetID": "string",
+                                "assetName": "string",
+                                "assetType": "string",
+                                "code": "string",
+                                "damCreateDate": "string",
+                                "format": "string",
+                                "galleryIndex": 0,
+                                "imageSpinIndicator": true,
+                                "imageType": "string",
+                                "isListingThumbnailImage": true,
+                                "isPrimary": true,
+                                "language": "string",
+                                "mediaType": "string",
+                                "order": "string",
+                                "packageView": "string",
+                                "productImageType": "string",
+                                "url": "string",
+                                "videoImageThumbnailDAMPath": "string",
+                                "videoImageThumbnailURL": "string",
+                                "videoPlatform": "string",
+                                "videoShortDescription": "string",
+                                "videoTitle": "string",
+                                "videoType": "string"
+                            },
+                            "lastModified": "string",
+                            "name": "string",
+                            "url": "string"
+                        }
+                    ]
+                }
+            },
+            "timestamp": "2022-11-07T14:24:53.160Z"
+        },
+        {
+            "description": "GET_/BASESITEID/catalogs_401 - Get a list of catalogs",
+            "request": {
+                "method": "GET",
+                "path": "/BASESITEID/catalogs",
+                "query": "fields=FIELDS",
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "response": {
+                "status": 401,
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "timestamp": "2022-11-07T14:24:53.160Z"
+        },
+        {
+            "description": "GET_/BASESITEID/catalogs_403 - Get a list of catalogs",
+            "request": {
+                "method": "GET",
+                "path": "/BASESITEID/catalogs",
+                "query": "fields=FIELDS",
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "response": {
+                "status": 403,
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "timestamp": "2022-11-07T14:24:53.160Z"
+        },
+        {
+            "description": "GET_/BASESITEID/catalogs_404 - Get a list of catalogs",
+            "request": {
+                "method": "GET",
+                "path": "/BASESITEID/catalogs",
+                "query": "fields=FIELDS",
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "response": {
+                "status": 404,
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "timestamp": "2022-11-07T14:24:53.160Z"
+        }
+    ],
+    "metadata": {
+        "pactSpecification": {
+            "version": "2.0.0"
+        },
+        "client": {
+            "name": "pact-mountebank-adapter",
+            "version": "1.0.2"
+        }
+    }
+}
