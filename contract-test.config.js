@@ -4,18 +4,17 @@ module.exports = {
     {
       name: "sample-provider",
       version: "1.0.1",
-      swaggerFilePath: "../provider/oas/products.yml",
       paths: []
     },
-    {
-      name: 'commerce-webservices',
-      version: "1.0.1",
-      swaggerFilePath: '../provider/oas/hybris-commerce-webservices.yml',
-      paths:[
-        '/{baseSiteId}/catalogs',
-        '/{baseSiteId}/products/{productCode}'
-      ]
-    }
+    // {
+    //   name: 'commerce-webservices',
+    //   version: "1.0.1",
+    //   swaggerFilePath: '../provider/oas/hybris-commerce-webservices.yml',
+    //   paths:[
+    //     '/{baseSiteId}/catalogs',
+    //     '/{baseSiteId}/products/{productCode}'
+    //   ]
+    // }
   ],
   swaggerHub: {
     owner: "CantireCorp",
