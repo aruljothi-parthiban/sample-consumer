@@ -28,12 +28,11 @@
                         "id": "1234",
                         "type": "food",
                         "price": 42,
-                        "description": "Indian cuisine",
                         "sku": "Test"
                     }
                 ]
             },
-            "timestamp": "2022-11-09T04:27:50.498Z"
+            "timestamp": "2022-11-09T04:41:33.737Z"
         },
         {
             "description": "GET_/products_400 - List all products",
@@ -51,7 +50,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2022-11-09T04:27:51.515Z"
+            "timestamp": "2022-11-09T04:41:34.756Z"
         },
         {
             "description": "POST_/products_200 - Create a product",
@@ -64,7 +63,6 @@
                     "name": "idli",
                     "type": "food",
                     "price": 42,
-                    "description": "Indian cuisine",
                     "sku": "Test"
                 },
                 "headers": {
@@ -86,7 +84,7 @@
                     "sku": "Test"
                 }
             },
-            "timestamp": "2022-11-09T04:27:51.691Z"
+            "timestamp": "2022-11-09T04:41:34.926Z"
         },
         {
             "description": "GET_/product/10_200 - Find product by ID",
@@ -113,7 +111,7 @@
                     "sku": "Test"
                 }
             },
-            "timestamp": "2022-11-09T04:27:51.877Z"
+            "timestamp": "2022-11-09T04:41:35.117Z"
         },
         {
             "description": "GET_/product/10_400 - Find product by ID",
@@ -131,7 +129,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2022-11-09T04:27:52.899Z"
+            "timestamp": "2022-11-09T04:41:36.141Z"
         },
         {
             "description": "GET_/product/10_404 - Find product by ID",
@@ -149,7 +147,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2022-11-09T04:27:53.925Z"
+            "timestamp": "2022-11-09T04:41:37.168Z"
         },
         {
             "description": "GET_/suggest_200 - Suggest",
@@ -172,7 +170,7 @@
                     "queryContext": "specialty hand tools"
                 }
             },
-            "timestamp": "2022-11-09T04:27:54.147Z"
+            "timestamp": "2022-11-09T04:41:37.412Z"
         },
         {
             "description": "GET_/suggest_400 - Suggest",
@@ -190,7 +188,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2022-11-09T04:27:55.165Z"
+            "timestamp": "2022-11-09T04:41:38.434Z"
         },
         {
             "description": "GET_/suggest_404 - Suggest",
@@ -208,7 +206,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2022-11-09T04:27:56.195Z"
+            "timestamp": "2022-11-09T04:41:39.456Z"
         }
     ],
     "metadata": {
