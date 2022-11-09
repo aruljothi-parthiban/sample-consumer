@@ -3,7 +3,8 @@ module.exports = {
   providers: [
     {
       name: "sample-provider",
-      version: "1.0.1",
+      version: "1.0.0",
+      swaggerFilePath: '../provider/oas/swagger.yml',
       paths: []
     },
     // {
@@ -15,6 +16,12 @@ module.exports = {
     //     '/{baseSiteId}/products/{productCode}'
     //   ]
     // }
+    // {
+    //   name: "cds.category-experience-api",
+    //   version: "1.8.14",
+    //   swaggerFilePath: '../cds.category-experience-api/src/swagger/swagger.yml',
+    //   paths: [],
+    // },
   ],
   swaggerHub: {
     owner: "CantireCorp",
