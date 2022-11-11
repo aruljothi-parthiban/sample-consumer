@@ -16,10 +16,16 @@ module.exports = {
     //     '/{baseSiteId}/products/{productCode}'
     //   ]
     // }
+    // {
+    //   name: "cds.category-experience-api",
+    //   version: "1.8.19",
+    //   swaggerFilePath: '../cds.category-experience-api/src/swagger/swagger.yml',
+    //   paths: [],
+    // },
     {
-      name: "cds.category-experience-api",
-      version: "1.8.19",
-      swaggerFilePath: '../cds.category-experience-api/src/swagger/swagger.yml',
+      name: "cds.product-experience-api",
+      version: "2.0.36",
+      // swaggerFilePath: '../cds.product-experience-api/src/swagger/swagger.yml',
       paths: [],
     },
   ],

@@ -1,0 +1,244 @@
+{
+    "consumer": {
+        "name": "sample-consumer"
+    },
+    "provider": {
+        "name": "cds.product-experience-api"
+    },
+    "interactions": [
+        {
+            "description": "GET_/api/v1/product/productFamily/1994399p_200 - Get core details for a productFamily",
+            "request": {
+                "method": "GET",
+                "path": "/api/v1/product/productFamily/1994399p",
+                "query": "baseStoreId=CTR&storeId=452",
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*",
+                    "baseSiteId": "CTR"
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "breadcrumbList": [
+                        {
+                            "label": "string",
+                            "url": "string",
+                            "categoryId": "string"
+                        }
+                    ],
+                    "images": [
+                        {
+                            "altText": "string",
+                            "mediaType": "string",
+                            "isListingThumbnailImage": "string",
+                            "url": "string",
+                            "displayPriority": 0
+                        }
+                    ],
+                    "brand": {
+                        "label": "string",
+                        "url": "string"
+                    },
+                    "name": "string",
+                    "code": "string",
+                    "rating": 0,
+                    "ratingsCount": 0,
+                    "totalOriginalPrice": {
+                        "value": 0,
+                        "maxPrice": 0,
+                        "minPrice": 0
+                    },
+                    "totalCurrentPrice": {
+                        "value": 0,
+                        "maxPrice": 0,
+                        "minPrice": 0
+                    },
+                    "homeService": true,
+                    "badges": [
+                        "string"
+                    ],
+                    "skus": [
+                        {
+                            "code": "string",
+                            "url": "string",
+                            "optionIds": [
+                                0
+                            ],
+                            "maxPurchasableQty": 0,
+                            "fulfillment": {
+                                "storePickUp": {
+                                    "enabled": true,
+                                    "etaEarliest": "string"
+                                },
+                                "shipToHome": {
+                                    "etaEarliest": "string",
+                                    "etaLatest": "string",
+                                    "enabled": true
+                                },
+                                "availability": {
+                                    "Corporate": {
+                                        "sthETA": {
+                                            "MaxETA": "string",
+                                            "MinETA": "string"
+                                        },
+                                        "bopisETA": {
+                                            "MaxETA": "string",
+                                            "MinETA": "string"
+                                        },
+                                        "MinOrderQty": 0
+                                    },
+                                    "quantity": 0
+                                },
+                                "expressDelivery": {
+                                    "enabled": true,
+                                    "orderIn": "string",
+                                    "etaEarliest": "string"
+                                }
+                            },
+                            "isBulk": true,
+                            "canonicalUrl": "string",
+                            "primarySellingChannel": "string",
+                            "restrictionMessage": "string",
+                            "installationEligible": true,
+                            "isUrgentLowStock": true,
+                            "corporateStatus": "string",
+                            "videoList": [
+                                {
+                                    "category": "string",
+                                    "title": "string",
+                                    "description": "string",
+                                    "url": "string",
+                                    "thumbnail": "string",
+                                    "displayPriority": 0
+                                }
+                            ],
+                            "formattedCode": "string",
+                            "repairOrderRequired": true,
+                            "variantStatus": "string"
+                        }
+                    ],
+                    "options": [
+                        {
+                            "descriptor": "string",
+                            "display": "string",
+                            "values": [
+                                {
+                                    "value": "string",
+                                    "id": 0,
+                                    "skuCodes": [
+                                        "string"
+                                    ],
+                                    "mediaSet": [
+                                        {
+                                            "altText": "string",
+                                            "mediaType": "string",
+                                            "isListingThumbnailImage": "string",
+                                            "url": "string",
+                                            "displayPriority": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "installationEligible": true,
+                    "sellable": true,
+                    "merchCategories": [
+                        "string"
+                    ],
+                    "shortDescription": "string",
+                    "longDescription": "string",
+                    "featureBullets": [
+                        {
+                            "description": "string"
+                        }
+                    ],
+                    "warrantyMessage": "string",
+                    "type": "PRODUCT (PRO)",
+                    "roadRating": {
+                        "aggregateValue": 0,
+                        "ratings": [
+                            {
+                                "roadRatedID": "string",
+                                "value": 0
+                            }
+                        ]
+                    },
+                    "hreflangLinkData": [
+                        {
+                            "href": "string",
+                            "hreflang": "string"
+                        }
+                    ],
+                    "videoList": [
+                        {
+                            "category": "string",
+                            "title": "string",
+                            "description": "string",
+                            "url": "string",
+                            "thumbnail": "string",
+                            "displayPriority": 0
+                        }
+                    ],
+                    "categoryLevel": "string",
+                    "lowStockThreshold": 0,
+                    "isUrgentLowStock": true,
+                    "fulfillment": {
+                        "storePickUp": {
+                            "enabled": true,
+                            "etaEarliest": "string"
+                        },
+                        "shipToHome": {
+                            "etaEarliest": "string",
+                            "etaLatest": "string",
+                            "enabled": true
+                        },
+                        "availability": {
+                            "Corporate": {
+                                "sthETA": {
+                                    "MaxETA": "string",
+                                    "MinETA": "string"
+                                },
+                                "bopisETA": {
+                                    "MaxETA": "string",
+                                    "MinETA": "string"
+                                },
+                                "MinOrderQty": 0
+                            },
+                            "quantity": 0
+                        },
+                        "expressDelivery": {
+                            "enabled": true,
+                            "orderIn": "string",
+                            "etaEarliest": "string"
+                        }
+                    },
+                    "metrics": {
+                        "pandaResponseMapping": "string",
+                        "productResultsFromPanda": "string",
+                        "skuResultsFromPanda": "string",
+                        "resultFromBadgesService": "string",
+                        "resultFromHybris": "string",
+                        "resultFromGlobalConfigService": "string"
+                    }
+                }
+            },
+            "timestamp": "2022-11-10T14:30:28.502Z"
+        }
+    ],
+    "metadata": {
+        "pactSpecification": {
+            "version": "2.0.0"
+        },
+        "client": {
+            "name": "pact-mountebank-adapter",
+            "version": "1.0.15"
+        }
+    }
+}
