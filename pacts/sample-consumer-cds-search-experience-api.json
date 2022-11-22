@@ -1,0 +1,125 @@
+{
+    "consumer": {
+        "name": "sample-consumer"
+    },
+    "provider": {
+        "name": "cds-search-experience-api"
+    },
+    "interactions": [
+        {
+            "description": "GET_/suggest_200 - Get sample.",
+            "request": {
+                "method": "GET",
+                "path": "/suggest",
+                "query": "q=cycle",
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*",
+                    "bannerid": "CTR",
+                    "baseSiteId": "CTR"
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "isCodeLookup": true,
+                    "suggestions": [
+                        {
+                            "type": "string",
+                            "label": "string",
+                            "searchUrl": "string"
+                        }
+                    ],
+                    "categories": [
+                        {
+                            "isRedirect": true,
+                            "type": "string",
+                            "label": "string",
+                            "searchUrl": "string",
+                            "categoryCode": "string"
+                        }
+                    ],
+                    "products": [
+                        {
+                            "url": "string",
+                            "type": "string",
+                            "code": "string",
+                            "title": "string",
+                            "images": [
+                                {
+                                    "altText": "string",
+                                    "imgUrl": "string"
+                                }
+                            ],
+                            "currentPrice": {
+                                "value": 0,
+                                "maxPrice": 0,
+                                "minPrice": 0
+                            }
+                        }
+                    ],
+                    "topHit": [
+                        {
+                            "type": "string",
+                            "label": "string",
+                            "searchUrl": "string"
+                        }
+                    ],
+                    "customFields": {}
+                }
+            },
+            "timestamp": "2022-11-22T14:31:22.072Z"
+        },
+        {
+            "description": "GET_/health_200 - The health status of the service",
+            "request": {
+                "method": "GET",
+                "path": "/health",
+                "query": "",
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                }
+            },
+            "timestamp": "2022-11-22T14:31:25.076Z"
+        },
+        {
+            "description": "GET_/health_500 - The health status of the service",
+            "request": {
+                "method": "GET",
+                "path": "/health",
+                "query": "",
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "response": {
+                "status": 500,
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "timestamp": "2022-11-22T14:31:28.080Z"
+        }
+    ],
+    "metadata": {
+        "pactSpecification": {
+            "version": "2.0.0"
+        },
+        "client": {
+            "name": "pact-mountebank-adapter",
+            "version": "1.0.0"
+        }
+    }
+}

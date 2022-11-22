@@ -1,3 +1,7 @@
+const getCategoryResponse = require('./contract-test/get-category');
+const categoryHandler = require('./contract-test/handlers/category-handler');
+const productHandler = require('./contract-test/handlers/product-handler');
+
 module.exports = {
   consumer: "sample-consumer",
   providers: [
@@ -22,26 +26,24 @@ module.exports = {
     //   swaggerFilePath: '../cds.category-experience-api/src/swagger/swagger.yml',
     //   paths: [],
     // },
+    // {
+    //   name: "cds.product-experience-api",
+    //   version: "2.0.36",
+    //   // swaggerFilePath: '../cds.product-experience-api/src/swagger/swagger.yml',
+    //   paths: [
+    //     '/api/v1/product/productFamilyList'
+    //   ],
+    // },
     {
-      name: "cds.product-experience-api",
-      version: "2.0.36",
-      // swaggerFilePath: '../cds.product-experience-api/src/swagger/swagger.yml',
+      name: "cds-search-experience-api",
+      version: "1.8.22",
+      swaggerFilePath: '../cds.search-experience-api/src/swagger/swagger_edited.yaml',
       paths: [],
     },
   ],
   onReady: (route, interaction) => {
-    switch(route) {
-      case '/api/v1/categories/{categoryId}':
-        if (interaction.request.method === 'GET') {
-          interaction.response.body.subcategories[0].subcategories = [];
-        }
-        break;
-      case '/api/v1/categories':
-        if (interaction.request.method === 'GET') {
-          interaction.response.body.categories[0].subcategories = [];
-        }
-        break;
-    }
+    categoryHandler(route, interaction);
+    productHandler(route, interaction);
   },
   swaggerHub: {
     owner: "CantireCorp",
