@@ -26,27 +26,23 @@ module.exports = {
     //   swaggerFilePath: '../cds.category-experience-api/src/swagger/swagger.yml',
     //   paths: [],
     // },
-    // {
-    //   name: "cds.product-experience-api",
-    //   version: "2.0.36",
-    //   // swaggerFilePath: '../cds.product-experience-api/src/swagger/swagger.yml',
-    //   paths: [
-    //     '/api/v1/product/productFamilyList'
-    //   ],
-    // },
     {
-      name: "cds-search-experience-api",
-      version: "1.8.22",
-      swaggerFilePath: '../cds.search-experience-api/src/swagger/swagger_edited.yaml',
-      paths: [],
+      name: "cds.product-experience-api",
+      version: "2.0.41",
+      // swaggerFilePath: '../cds.product-experience-api/src/swagger/swagger.yml',
+      paths: [
+        '/api/v1/product/productFamilyList'
+      ],
     },
+    // {
+    //   name: "cds-search-experience-api",
+    //   version: "1.8.22",
+    //   swaggerFilePath: '../cds.search-experience-api/src/swagger/swagger_edited.yaml',
+    //   paths: [],
+    // },
   ],
   onReady: (route, interaction) => {
     categoryHandler(route, interaction);
     productHandler(route, interaction);
-  },
-  swaggerHub: {
-    owner: "CantireCorp",
-    API_KEY: "7a8e2166-0b76-4f6a-aff0-76486b1aa3fe",
   }
 };
