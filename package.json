@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@cantire-corp/cds.lib.generate-pacts-from-swagger": "^1.0.2",
-    "@cantire-corp/cds.lib.swagger-to-pacts": "^1.0.2",
+    "@cantire-corp/cds.lib.swagger-to-pacts": "^1.0.7",
     "axios": "^0.21.1",
     "jest": "^27.5.1"
   },

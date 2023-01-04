@@ -25,7 +25,7 @@
                 },
                 "body": {}
             },
-            "timestamp": "2022-12-26T11:36:29.765Z"
+            "timestamp": "2023-01-04T10:25:16.538Z"
         },
         {
             "description": "GET_/search_400 - Get sample.",
@@ -58,7 +58,7 @@
                     "isCdsError": true
                 }
             },
-            "timestamp": "2022-12-26T11:36:29.799Z"
+            "timestamp": "2023-01-04T10:25:16.596Z"
         },
         {
             "description": "GET_/search_404 - Get sample.",
@@ -91,7 +91,7 @@
                     "isCdsError": true
                 }
             },
-            "timestamp": "2022-12-26T11:36:29.849Z"
+            "timestamp": "2023-01-04T10:25:16.662Z"
         },
         {
             "description": "GET_/search/byUpc/055800153128_200 - Search by UPC",
@@ -112,7 +112,7 @@
                 },
                 "body": {}
             },
-            "timestamp": "2022-12-26T11:36:30.150Z"
+            "timestamp": "2023-01-04T10:25:17.025Z"
         },
         {
             "description": "GET_/search/byUpc/055800153128_400 - Search by UPC",
@@ -145,7 +145,7 @@
                     "isCdsError": true
                 }
             },
-            "timestamp": "2022-12-26T11:36:30.182Z"
+            "timestamp": "2023-01-04T10:25:17.101Z"
         },
         {
             "description": "GET_/search/byUpc/055800153128_404 - Search by UPC",
@@ -178,7 +178,7 @@
                     "isCdsError": true
                 }
             },
-            "timestamp": "2022-12-26T11:36:30.236Z"
+            "timestamp": "2023-01-04T10:25:17.182Z"
         },
         {
             "description": "GET_/suggest_200 - Get sample.",
@@ -262,7 +262,7 @@
                     ]
                 }
             },
-            "timestamp": "2022-12-26T11:36:30.571Z"
+            "timestamp": "2023-01-04T10:25:17.604Z"
         },
         {
             "description": "GET_/suggest_400 - Get sample.",
@@ -297,7 +297,7 @@
                     "isCdsError": true
                 }
             },
-            "timestamp": "2022-12-26T11:36:30.603Z"
+            "timestamp": "2023-01-04T10:25:17.665Z"
         },
         {
             "description": "GET_/suggest_404 - Get sample.",
@@ -332,7 +332,7 @@
                     "isCdsError": true
                 }
             },
-            "timestamp": "2022-12-26T11:36:30.648Z"
+            "timestamp": "2023-01-04T10:25:17.734Z"
         },
         {
             "description": "GET_/health_200 - The health status of the service",
@@ -350,7 +350,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2022-12-26T11:36:33.651Z"
+            "timestamp": "2023-01-04T10:25:20.739Z"
         },
         {
             "description": "GET_/health_500 - The health status of the service",
@@ -368,7 +368,7 @@
                     "Connection": "close"
                 }
             },
-            "timestamp": "2022-12-26T11:36:36.655Z"
+            "timestamp": "2023-01-04T10:25:23.743Z"
         }
     ],
     "metadata": {
@@ -377,7 +377,7 @@
         },
         "client": {
             "name": "pact-mountebank-adapter",
-            "version": "1.0.3"
+            "version": "1.0.0"
         }
     }
 }
