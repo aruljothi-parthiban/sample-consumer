@@ -5,6 +5,10 @@ module.exports = (route, interaction) => {
     request.method === "POST" &&
     response.status === 400
   ) {
-    interaction.skip = true;
+    interaction.response.body = {
+      notFoundIds: ["string"],
+    };
+
+    // interaction.skip = true;
   }
 };

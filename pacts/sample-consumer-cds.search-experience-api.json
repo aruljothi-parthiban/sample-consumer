@@ -1,0 +1,383 @@
+{
+    "consumer": {
+        "name": "sample-consumer"
+    },
+    "provider": {
+        "name": "cds.search-experience-api"
+    },
+    "interactions": [
+        {
+            "description": "GET_/search_200 - Get sample.",
+            "request": {
+                "method": "GET",
+                "path": "/search",
+                "query": "store=452",
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": {}
+            },
+            "timestamp": "2022-12-26T11:36:29.765Z"
+        },
+        {
+            "description": "GET_/search_400 - Get sample.",
+            "request": {
+                "method": "GET",
+                "path": "/search",
+                "query": "store=452",
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
+                }
+            },
+            "response": {
+                "status": 400,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "message": "string",
+                    "errOrigin": "string",
+                    "statusCode": 0,
+                    "error": "string",
+                    "errCode": "string",
+                    "data": "string",
+                    "errors": [
+                        "string"
+                    ],
+                    "requestId": "string",
+                    "isCdsError": true
+                }
+            },
+            "timestamp": "2022-12-26T11:36:29.799Z"
+        },
+        {
+            "description": "GET_/search_404 - Get sample.",
+            "request": {
+                "method": "GET",
+                "path": "/search",
+                "query": "store=452",
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
+                }
+            },
+            "response": {
+                "status": 404,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "message": "string",
+                    "errOrigin": "string",
+                    "statusCode": 0,
+                    "error": "string",
+                    "errCode": "string",
+                    "data": "string",
+                    "errors": [
+                        "string"
+                    ],
+                    "requestId": "string",
+                    "isCdsError": true
+                }
+            },
+            "timestamp": "2022-12-26T11:36:29.849Z"
+        },
+        {
+            "description": "GET_/search/byUpc/055800153128_200 - Search by UPC",
+            "request": {
+                "method": "GET",
+                "path": "/search/byUpc/055800153128",
+                "query": "",
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": {}
+            },
+            "timestamp": "2022-12-26T11:36:30.150Z"
+        },
+        {
+            "description": "GET_/search/byUpc/055800153128_400 - Search by UPC",
+            "request": {
+                "method": "GET",
+                "path": "/search/byUpc/055800153128",
+                "query": "",
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
+                }
+            },
+            "response": {
+                "status": 400,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "message": "string",
+                    "errOrigin": "string",
+                    "statusCode": 0,
+                    "error": "string",
+                    "errCode": "string",
+                    "data": "string",
+                    "errors": [
+                        "string"
+                    ],
+                    "requestId": "string",
+                    "isCdsError": true
+                }
+            },
+            "timestamp": "2022-12-26T11:36:30.182Z"
+        },
+        {
+            "description": "GET_/search/byUpc/055800153128_404 - Search by UPC",
+            "request": {
+                "method": "GET",
+                "path": "/search/byUpc/055800153128",
+                "query": "",
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*"
+                }
+            },
+            "response": {
+                "status": 404,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "message": "string",
+                    "errOrigin": "string",
+                    "statusCode": 0,
+                    "error": "string",
+                    "errCode": "string",
+                    "data": "string",
+                    "errors": [
+                        "string"
+                    ],
+                    "requestId": "string",
+                    "isCdsError": true
+                }
+            },
+            "timestamp": "2022-12-26T11:36:30.236Z"
+        },
+        {
+            "description": "GET_/suggest_200 - Get sample.",
+            "request": {
+                "method": "GET",
+                "path": "/suggest",
+                "query": "storeId=452",
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*",
+                    "bannerId": "CTR",
+                    "baseSiteId": "CTR"
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "isCodeLookup": true,
+                    "suggestions": [
+                        {
+                            "type": "string",
+                            "label": "string",
+                            "searchUrl": "string"
+                        }
+                    ],
+                    "categories": [
+                        {
+                            "type": "string",
+                            "label": "string",
+                            "searchUrl": "string",
+                            "categoryCode": "string"
+                        }
+                    ],
+                    "products": [
+                        {
+                            "url": "string",
+                            "type": "string",
+                            "code": "string",
+                            "title": "string",
+                            "images": [
+                                {
+                                    "altText": "string",
+                                    "url": "string"
+                                }
+                            ],
+                            "currentPrice": {
+                                "value": 0,
+                                "maxPrice": 0,
+                                "minPrice": 0
+                            }
+                        }
+                    ],
+                    "topHit": [
+                        {
+                            "type": "string",
+                            "label": "string",
+                            "searchUrl": "string"
+                        }
+                    ],
+                    "customFields": {},
+                    "metadata": "string",
+                    "errorCode": "string",
+                    "errors": [
+                        {
+                            "message": "string",
+                            "errOrigin": "string",
+                            "statusCode": 0,
+                            "error": "string",
+                            "errCode": "string",
+                            "data": "string",
+                            "errors": [
+                                "string"
+                            ],
+                            "requestId": "string",
+                            "isCdsError": true
+                        }
+                    ]
+                }
+            },
+            "timestamp": "2022-12-26T11:36:30.571Z"
+        },
+        {
+            "description": "GET_/suggest_400 - Get sample.",
+            "request": {
+                "method": "GET",
+                "path": "/suggest",
+                "query": "storeId=452",
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*",
+                    "bannerId": "CTR",
+                    "baseSiteId": "CTR"
+                }
+            },
+            "response": {
+                "status": 400,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "message": "string",
+                    "errOrigin": "string",
+                    "statusCode": 0,
+                    "error": "string",
+                    "errCode": "string",
+                    "data": "string",
+                    "errors": [
+                        "string"
+                    ],
+                    "requestId": "string",
+                    "isCdsError": true
+                }
+            },
+            "timestamp": "2022-12-26T11:36:30.603Z"
+        },
+        {
+            "description": "GET_/suggest_404 - Get sample.",
+            "request": {
+                "method": "GET",
+                "path": "/suggest",
+                "query": "storeId=452",
+                "headers": {
+                    "Connection": "close",
+                    "Accept": "application/json, text/plain, */*",
+                    "bannerId": "CTR",
+                    "baseSiteId": "CTR"
+                }
+            },
+            "response": {
+                "status": 404,
+                "headers": {
+                    "Connection": "close",
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "message": "string",
+                    "errOrigin": "string",
+                    "statusCode": 0,
+                    "error": "string",
+                    "errCode": "string",
+                    "data": "string",
+                    "errors": [
+                        "string"
+                    ],
+                    "requestId": "string",
+                    "isCdsError": true
+                }
+            },
+            "timestamp": "2022-12-26T11:36:30.648Z"
+        },
+        {
+            "description": "GET_/health_200 - The health status of the service",
+            "request": {
+                "method": "GET",
+                "path": "/health",
+                "query": "",
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "timestamp": "2022-12-26T11:36:33.651Z"
+        },
+        {
+            "description": "GET_/health_500 - The health status of the service",
+            "request": {
+                "method": "GET",
+                "path": "/health",
+                "query": "",
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "response": {
+                "status": 500,
+                "headers": {
+                    "Connection": "close"
+                }
+            },
+            "timestamp": "2022-12-26T11:36:36.655Z"
+        }
+    ],
+    "metadata": {
+        "pactSpecification": {
+            "version": "2.0.0"
+        },
+        "client": {
+            "name": "pact-mountebank-adapter",
+            "version": "1.0.3"
+        }
+    }
+}
